@@ -7,7 +7,8 @@ const Log = () => {
     const [username, setUsername] = useState('');
     const [password, setPassword] = useState('');
   
-    const handleLogin = () => {
+    const handleLogin = (e) => {
+      e.preventDefault();
       // You can add your authentication logic here.
       // For this example, let's assume a successful login if both fields are filled.
       if (username !== '' && password !== '') {
@@ -33,7 +34,7 @@ const Log = () => {
                 <div className="card mt-5 d-block mx-auto c">
                     <div className="card-header text-center">LOGIN</div>
                     <div className="card-body">
-                        <form>
+                        <form onSubmit={handleLogin}>
                             <div className="form-group">
                                 <label htmlFor="username">Username</label>
                                 <input type="text"
@@ -48,7 +49,7 @@ const Log = () => {
                                 onChange={(e) => setPassword(e.target.value)}
                                  className="form-control mb-4"/>
                             </div>
-                            <button onClick={handleLogin} className="btn btn-primary">Login</button>
+                            <button  className="btn btn-primary">Login</button>
                         </form>
                     </div>
                 </div>

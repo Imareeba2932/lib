@@ -11,8 +11,20 @@ const Nav = () => {
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item active">
-                        <Link to="/log">Home </Link>
+                        <Link class="nav-link" to="/log">Log </Link>
                     </li>
+                    <li class="nav-item">
+                        <Link class="nav-link" to="/login">Login</Link>
+                    </li>
+                    <li class="nav-item">
+                        <Link class="nav-link" to="/barChart">BarChart</Link>
+                    </li>
+                    <li class="nav-item">
+                        <Link class="nav-link" to="/prac">Prac</Link>
+                    </li>
+                     <li class="nav-item">
+                        <Link class="nav-link" to="/konva">Konva</Link>
+                    </li> 
                 </ul>
             </div>
         </nav>
