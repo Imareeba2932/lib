@@ -43,3 +43,37 @@
   display: flex;
   justify-content: space-between;
 }
+
+.bgimg{
+  background-image: linear-gradient(0deg, #0000005f, #000000c6), url('https://wallpaperaccess.com/full/3373555.jpg');
+  background-position:center;
+  background-size: cover;
+}
+
+/* Reset default margin and padding for the header and its content */
+.header {
+  margin: 0;
+  padding: 0;
+  
+}
+
+.header-content {
+  display: flex; 
+  justify-content: space-between; 
+  align-items: center; 
+  background-color: #333; 
+  color: #fff; 
+  padding: 10px 20px; 
+  background-image: url('https://tse3.mm.bing.net/th?id=OIP.qMXJU2s7BQSAZkhE9qVm3wHaEo&pid=Api&P=0&h=180');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 60vh;
+}
+
+
+
+.pizza{
+  width: 70%;
+  height: 70%;
+  object-fit: cover;
+}

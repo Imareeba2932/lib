@@ -5,7 +5,7 @@ import chartData from './chartdata';
 
 const BarChart = () => {
   return (
-    <div>
+    <div className="container">
     <Bar
       data={chartData}
       
